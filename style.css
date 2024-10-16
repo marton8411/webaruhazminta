@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+  /* background-color: #463f3a; */
+  background-color: #343a40;
+  min-height: 100vh;
+}
+main {
+  display: grid;
+}
+header {
+  background-color: #162856;
+  padding: 20px;
+}
+header h1 {
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #7887ab;
+}
+nav li {
+  font-size: medium;
+  width: max-content;
+}
+.sidebar {
+  background-color: #8a817c;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  display: none;
+}
+.sidebar li {
+  padding: 10px;
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #bcb8b1;
+}
+/* .sidebar a {
+  width: 100%;
+} */
+.sidebar a:hover {
+  color: #463f3a;
+}
+.cartbar {
+  background-color: #463f3a;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 400px;
+  z-index: 999;
+  display: none;
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
+  border-left: 1px solid white;
+}
+.cart_item {
+  padding: 30px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 4fr 3fr 30px 10px 10px;
+  grid-template-rows: 1fr;
+}
+.cart_item img {
+  max-width: 100px;
+  grid-row: 1 / 2;
+}
+.menu-button {
+  display: none;
+}
+.buy-button {
+  width: 90%;
+  padding: 5px;
+  margin-top: 20px;
+}
+.info-button {
+  width: 40%;
+}
+button {
+  padding: 5px;
+  background-color: #bcb8b1;
+  border: 1px #bcb8b1;
+  border-radius: 5px;
+  margin: 3px;
+}
+button:hover {
+  background-color: #8a817c;
+}
+button:active {
+  background-color: #8a817c;
+}
+button:disabled {
+  text-decoration: line-through;
+  background-color: gray;
+}
+.old-price {
+  text-decoration: line-through;
+}
+.new-price {
+  color: #f4978e;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    grid-template-columns: 10fr 2fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+  .cartbar {
+    width: 100%;
+  }
+}

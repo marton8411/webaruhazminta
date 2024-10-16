@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index_article.css" />
+    <title>Kisváradi Márton</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul class="sidebar">
+            <!-- prettier-ignore -->
+            <li onclick=hideSideBar()><a href="#"><img src="img/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="#">Kosár</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">XYZ Outlet Webshop</a></li>
+            <li class="hideOnMobile"><a href="index.html">Kezdőlap</a></li>
+            <li class="hideOnMobile"><a href="#">Kosár</a></li>
+            <li class="hideOnMobile"><a href="#">Kapcsolat</a></li>
+            <!-- prettier-ignore -->
+            <li class="menu-button" onclick=showSideBar()><a href="#"><img src="img/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+            <!-- prettier-ignore -->
+            <li onclick=showCartBar()><a href="#"><img src="img/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+          </ul>
+
+          <!-- !! Cartbar !! -->
+
+          <ul class="cartbar">
+            <!-- prettier-ignore -->
+            <li onclick=hideCartBar()><a href="#"><img src="img/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+            <h2>Kosárban lévő termékek</h2>
+            <hr />
+            <div class="cart_item">
+              <img src="img/niketee.jpg" alt="" />
+              <p>Nike T-Shirt (Fekete - S)</p>
+              <p>
+                <span class="old-price">9.000 Ft</span>
+                <span class="new-price">7.500 Ft</span>
+              </p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/remove_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+              <p>1</p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            </div>
+            <hr />
+            <div class="cart_item">
+              <img src="img/thhoody.jpg" alt="" />
+              <p>
+                Tommy Hilfiger Hoody
+                <br />
+                (Fekete - L)
+              </p>
+              <p>
+                <span class="old-price">47.990 Ft</span>
+                <span class="new-price">32.990 Ft</span>
+              </p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/remove_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+              <p>1</p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            </div>
+            <hr />
+            <div class="cart_item">
+              <img src="img/patscap.jpg" alt="" />
+              <p>New England Patriots Cap (Fekete - XL)</p>
+              <p>
+                <span class="old-price">9.900 Ft</span>
+                <span class="new-price">7.990 Ft</span>
+              </p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/remove_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+              <p>1</p>
+              <!-- prettier-ignore -->
+              <a href="#"><img src="img/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            </div>
+            <hr />
+            <p>
+              Összesen: 38.480 Ft
+              <span class="new-price">(+ Szállítási költségek)</span>
+            </p>
+            <hr />
+            <p>
+              <button class="buy-button">
+                Vásárlás - Jelenleg nem elérhető
+              </button>
+            </p>
+            <p>
+              <button class="info-button">Szállítási információk</button>
+              <button class="info-button">Kapcsolat</button>
+            </p>
+          </ul>
+        </nav>
+      </header>
+      <h1>Made by Kisváradi Márton</h1>
+      <section>
+        <article class="akciok">
+          <div>
+            <a href="">
+              <img src="img/niketee.jpg" alt="" />
+              <br />
+              Nike Sportswear
+            </a>
+            <p>Unisex Fekete színű</p>
+            <p>
+              <span class="old-price">9.000 Ft</span>
+              <span class="new-price">7.500 Ft</span>
+            </p>
+            <p>
+              <button>S</button>
+              <button disabled>M</button>
+              <button>L</button>
+              <button disabled>XL</button>
+              <button>XXL</button>
+            </p>
+          </div>
+          <div>
+            <a href="">
+              <img src="img/thhoody.jpg" alt="" />
+              <br />
+              Tommy Hilfiger Hoody
+            </a>
+            <p>Férfi Fekete színű</p>
+            <p>
+              <span class="old-price">47.990 Ft</span>
+              <span class="new-price">32.990 Ft</span>
+            </p>
+            <p>
+              <button disabled>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button disabled>XL</button>
+              <button disabled>XXL</button>
+            </p>
+          </div>
+          <div>
+            <a href="">
+              <img src="img/adhbspz.jpg" alt="" />
+              <br />
+              Adidas Originals
+            </a>
+            <p>Női Zöld/Rózsaszín</p>
+            <p>
+              <span class="old-price">47.990 Ft</span>
+              <span class="new-price">36.499 Ft</span>
+            </p>
+            <p>
+              <button disabled>36</button>
+              <button disabled>37</button>
+              <button>38</button>
+              <button disabled>40.5</button>
+              <button>42</button>
+            </p>
+          </div>
+          <div>
+            <a href="">
+              <img src="img/patscap.jpg" alt="" />
+              <br />
+              New Era Trucker Cap
+            </a>
+            <p>Unisex New England Patriots Sapka</p>
+            <p>
+              <span class="old-price">9.990 Ft</span>
+              <span class="new-price">7.990 Ft</span>
+            </p>
+            <p>
+              <button>S</button>
+              <button disabled>M</button>
+              <button disabled>L</button>
+              <button>XL</button>
+              <button disabled>XXL</button>
+            </p>
+          </div>
+        </article>
+
+        <article class="kosar">
+          <div class="kosar-item">
+            <img src="img/patscap.jpg" alt="" />
+            <p>New Era Trucker Cap</p>
+            <p>
+              <span class="new-price">7.990 Ft</span>
+            </p>
+            <!-- prettier-ignore -->
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </div>
+          <div class="kosar-item">
+            <img src="img/thhoody.jpg" alt="" />
+            <p>Tommy Hilfiger Hoody</p>
+            <p>
+              <span class="new-price">32.990 Ft</span>
+            </p>
+            <!-- prettier-ignore -->
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </div>
+          <div class="kosar-item">
+            <img src="img/adhbspz.jpg" alt="" />
+            <p>Adidas Originals</p>
+            <p>
+              <span class="new-price">36.499 Ft</span>
+            </p>
+            <!-- prettier-ignore -->
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </div>
+          <div class="kosar-item">
+            <img src="img/niketee.jpg" alt="" />
+            <p>Nike Sportswear</p>
+            <p>
+              <span class="new-price">7.500 Ft</span>
+            </p>
+            <!-- prettier-ignore -->
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </div>
+          <hr />
+          <div class="osszesen">
+            <p>
+              Összesen: 84 979 Ft
+              <span class="new-price">(+ Szállítási költségek)</span>
+            </p>
+            <p>
+              <button disabled>Vásárlás - Jelenleg nem elérhető</button>
+            </p>
+            <p>
+              <button>Szállítási információk</button>
+              <button>Kapcsolat</button>
+            </p>
+          </div>
+        </article>
+      </section>
+      <footer></footer>
+    </main>
+    <script>
+      function showSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "block";
+      }
+      function hideSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+      function showCartBar() {
+        const cartbar = document.querySelector(".cartbar");
+        cartbar.style.display = "block";
+      }
+      function hideCartBar() {
+        const cartbar = document.querySelector(".cartbar");
+        cartbar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
